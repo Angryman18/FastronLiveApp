@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.pricing_main {
+  display: flex;
+  margin: 1.5rem 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.pricing_content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form_main {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form_contents {
+  flex: 1;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form_contents h3, .form_contents h4 {
+  margin: 5px 0;
+}
+
+
+.from_input {
+  width: 60%;
+  position: relative;
+}
+.from_input_box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.from_main_input {
+  width: 100%;
+  padding: 5px;
+  font-size: 1rem;
+  outline: none;
+  border: 2px solid rgb(209, 208, 208);
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.showSuggestions {
+  width: 100%;
+  position: absolute;
+  filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.5));
+  z-index: 20;
+}
+
+.suggestion_child {
+  border: 1px solid rgb(211, 209, 209);
+  border-bottom: none;
+  padding: 3px 5px;
+  font-size: 1rem;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.suggestion_child:hover {
+  background-color: #f2f4f6;
+}
+
+
+.shipment_type {
+  width: 60%;
+  padding: 5px;
+  outline: none;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 1rem;
+  border: 1px solid #aaa;
+}
+
+.submit_pricing_button {
+  margin: 10px 0;
+  padding: 5px 1rem;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  background-color: #1f640a;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.submit_pricing_button:hover {
+  background-color: green;
+  transition: 0.2s ease;
+}
+
+.image {
+  flex: 1;
+  display: grid;
+  place-items: center;
+}
+
+.image img {
+  width: 100%;
+  /* min-width: 500px; */
+  object-fit: cover;
+}
+
+#page_heading {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.submit_message {
+  width: 60%;
+  background-color: rgba(32,54,107,1);
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .pricing_main {
+    display: flex;
+    margin: 1.5rem 0;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+  }
+  .form_main {
+    display: flex;
+    flex-direction: column;
+  }
+  .image {
+    flex: 1;
+    width: 100%;
+  }
+  .form_contents {
+    flex: 1;
+    border: none;
+    width: 100%;
+  }
+
+  .from_input {
+    width: 80%;
+    min-width: 300px;
+    max-width: 500px;
+  }
+  .submit_message {
+    width: 80%;
+    min-width: 300px;
+    max-width: 500px;
+  }
+  .shipment_type {
+    width: 80%;
+    min-width: 300px;
+    max-width: 500px;
+  }
+
+  .image img {
+    width: 100%;
+    min-width: none;
+  }
+}

@@ -1,0 +1,26 @@
+.loading {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+  }
+  .loading:after {
+    content: " ";
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin: 8px;
+    border-radius: 50%;
+    color: #fff;
+    border: 6px solid rgb(0, 47, 255);
+    border-color: rgb(70, 67, 67) transparent rgb(5, 4, 4) transparent;
+    animation: loading 1.2s linear infinite;
+  }
+  @keyframes loading {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  

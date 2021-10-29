@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
+
+* {
+  font-family: "PT Sans", sans-serif;
+}
+
+.footer {
+  background-color: #212121;
+  padding: 0.5rem 0;
+}
+.credits {
+  color: #fff;
+  text-align: center;
+}
+
+.credits span a {
+  color: aqua;
+}
+
+.footer_main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  background-color: #212121;
+  color: #fff;
+  box-sizing: border-box;
+  padding: 3rem 0 1.5rem 0;
+}
+
+.footer_front {
+  text-align: center;
+}
+
+.footer_middle h3 {
+  margin: 5px 0;
+}
+
+.footer_middle ul {
+  margin: 5px 0;
+  display: flex;
+  flex-direction: column;
+}
+.footer_middle ul a {
+  text-decoration: none;
+  margin: 3px 0;
+  color: #fff;
+}
+
+.footer_middle ul a:hover {
+  color: dodgerblue;
+}
+
+.footer_end h3 {
+  margin: 5px 0;
+}
+
+.footer_end ul {
+    margin: 5px 0;
+}
+
+.footer_end span {
+  display: inline;
+  margin: 2px 3px;
+  cursor: pointer;
+}
+.footer_end span:hover {
+    color: dodgerblue;
+}
+
+
+@media screen and (max-width: 768px) {
+    .footer_main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #212121;
+        color: #fff;
+        box-sizing: border-box;
+        padding: 3rem 2rem 1.5rem 2rem;
+      }
+
+      .footer_main hr {
+          width: 50%;
+      }
+
+      .footer_end ul {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+
+      }
+      .footer_end span {
+          padding: 5px 0.5rem;
+      }
+      .footer_front {
+        text-align: left;
+        margin: 10px 0;
+      }
+      .footer_middle {
+        margin: 10px 0;
+      }
+}

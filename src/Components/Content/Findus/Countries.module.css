@@ -1,0 +1,13 @@
+select {
+    padding: 10px;
+    outline: none;
+    border: none;
+    font-size: clamp(0.85rem, 2vw, 1rem);
+    width: clamp(15rem, 20vw, 50rem);
+}
+
+select option {
+    padding: 5px;
+    font-size: clamp(0.85rem, 2vw, 1rem);
+    
+}

@@ -1,0 +1,104 @@
+.background_main {
+    width: 100%;
+    height: 50vh;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.background_middle{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.background_middle h3 {
+    margin: 0;
+    padding: 0;
+    color: green;
+    flex: 1;
+
+}
+
+.background_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;
+    flex: 2;
+}
+
+.text {
+    text-align: center;
+    margin: 3rem 0 auto auto;
+    color: brown;
+    box-sizing: border-box;
+    text-decoration: underline;
+}
+
+.background_content label {
+    margin: 0 10px;
+}
+
+.background_content label .input{
+    padding: 10px 15px;
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 5px;
+}
+.background_content p{
+    margin: 0 5px;
+}
+
+.background_content label .error {
+    border: 1px solid red;
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+.background_content label .error::placeholder {
+    color: rgb(0, 0, 0);
+}
+
+.background_content button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    background-color: rgb(14, 143, 14);
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.background_content button:hover {
+    background-color: indigo;
+    transition: 0.2s ease;
+}
+
+@media screen and (max-width: 768px) {
+    .background_content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+    }
+
+    .background_content label {
+        margin: 10px 10px;
+    }
+    .background_content p {
+        margin: 10px 0;
+    }
+    .background_middle h3 {
+        margin: 1rem 0;
+        font-size: clamp(1rem, 2vw, 1.3rem);
+        text-align: center;
+        word-wrap: break-word;
+    }
+}

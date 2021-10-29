@@ -1,0 +1,64 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+
+nav.desktop_nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 55px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 15;
+  /* border-bottom: 2px solid rgb(212, 208, 208); */
+  box-shadow: 0px 1px 10px 5px rgba(0,0,0,0.1);
+  transition: 0.2s ease;
+}
+
+nav.desktop_nav div.logo {
+  font-size: clamp(1.4rem, 2vw, 2.2rem);
+  margin: auto 0;
+}
+
+nav.desktop_nav div.logo a{
+  text-decoration: none;
+  color: #212121;
+}
+.desktop_menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50vw;
+  min-width: 350px;
+  max-width: 700px;
+}
+.desktop_menu a li {
+  list-style: none;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+}
+
+.desktop_menu a {
+  text-decoration: none;
+  font-size: clamp(1rem, 1.3vw, 1.4rem);
+  color: rgb(6, 106, 207);
+  cursor: pointer;
+}
+
+.desktop_menu a:hover {
+  color: rgb(2, 58, 114);
+}
+
+.is_active {
+    color: rgb(118, 118, 248);
+}
+
+@media screen and (max-width: 768px) {
+    nav.desktop_nav {
+        display: none;
+    }
+}
